@@ -1,0 +1,31 @@
+GET http://localhost:5150/foods
+
+###
+GET http://localhost:5150/foods/3
+
+###
+POST http://localhost:5150/foods
+Content-Type: application/json
+
+{
+    "nama": "Mangga",
+    "jenisId": 2,
+    "harga": 20.00,
+    "releaseDate": "2024-02-02"
+}
+
+###
+PUT http://localhost:5150/foods/3
+Content-Type: application/json
+
+{
+    "nama": "mangga manis",
+    "jenisId": 4,
+    "harga": 10.00,
+    "releaseDate": "2024-02-24"
+  }
+
+###
+DELETE http://localhost:5150/foods/4
+
+
